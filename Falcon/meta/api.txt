@@ -1,0 +1,5 @@
+        // Replace 'YOUR_API_KEY' with your actual API key
+        const apiKey = 'AIzaSyDkImyDMpXroXPHCVD0cgGlD5hrBSk4LTA';
+        const cx = '013dfbd644bed4d5d';
+
+        const unsplashAccessKey = 'HzVY4yNAMCocTp8hmPLwUJ5NMbgz3EFBiIyO2CPvfc0';

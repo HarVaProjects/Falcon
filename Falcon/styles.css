@@ -1,0 +1,343 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('icon/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 14px;
+    padding: 15px;
+    padding-left: 17px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background-color: #EEEEEE;
+    width: 70%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#searchButton {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #2D2D2D;
+}
+
+#searchResults {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#results {
+    list-style: none;
+    padding: 0;
+}
+
+.result-item {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.result-item:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.result-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.result-item a:hover {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+.secure-sign {
+    color: #4caf50;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.glassy-footer {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.glassy-footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.notification {
+    background-color: #ff8080;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s;
+}
+
+.notification.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.grid-item {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.grid-item:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-height: 1000px;  
+    object-fit: cover;
+}
+
+.favicon {
+    width: 16px;   
+    height: 16px;   
+    margin-right: 10px;   
+    vertical-align: middle; 
+}
+
+.glassy-footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.glassy-footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.glassy-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;   
+    height: 30px;  
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.glassy-button:hover {
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.glassy-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 60%;
+    height: auto;
+}
+
+.glassy-footer {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.glassy-footer p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .glassy-footer {
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .glassy-footer {
+        width: 25%;
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    width: 70%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#searchButton {
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#searchButton:hover {
+    background-color: #555;
+}
+
+#searchInput::placeholder {
+    color: #999;
+}
+
+#searchInput:focus {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.search-container img {
+    filter: brightness(0.7);
+}
+
+.small-logo {
+    width: 250px; 
+    height: auto; 
+}
+
+.menu-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button.two {
+    border-radius: 50%;
+}
+
+.menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu-button.one {
+    width: 40px; /* Adjust the width to be twice the height */
+    height: 40px;
+    border-radius: 50%;
+}
+
+.slide-menu {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-button {
+    margin-bottom: 10px; /* Add margin between buttons */
+}
+

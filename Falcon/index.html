@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon Byte</title>
+    <link rel="icon" type="image/png" href="icon/fav.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide-menu">
+        <button id="helpButton" class="menu-button">
+            <img src="icon/home.png" alt="Home Icon" class="icon">
+        </button>
+        <button class="menu-button one"></button>
+        <button class="menu-button two"></button>
+    </div>
+    <div id="notFoundNotification" class="notification hidden">
+            Sorry, Result Not Found
+    </div>
+    </div>
+    <div class="container">
+        <h1>
+            <a href="#"><img src="icon/fb.png" alt="Falcon Byte Logo" class="small-logo"></a>
+        </h1>
+        <div class="search-container">
+            <img src="icon/sch.jpg" alt="Search Logo" class="search-logo" width="20px" style="margin-right: 10px;">
+            <input type="text" id="searchInput">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="searchResults" class="hidden">
+            <ul id="results" class="image-results"></ul>
+        </div>
+    </div>
+    <footer class="glassy-footer">
+        <b><p>&copy; 2024 HarVa Groups</p></b>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
